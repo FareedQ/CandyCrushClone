@@ -10,11 +10,16 @@ import Foundation
 
 let NumColumns = 9
 let NumRows = 9
+let NumLevels = 4
 
 class Level {
     fileprivate var cookies = Array2D<Cookie>(columns: NumColumns, rows: NumRows)
     private var tiles = Array2D<Tile>(columns: NumColumns, rows: NumRows)
     private var possibleSwaps = Set<Swap>()
+    private var comboMultiplier = 0
+    
+    var targetScore = 0
+    var maximumMoves = 0
     
     init(filename: String) {
         guard let dictionary = Dictionary<String, AnyObject>.loadJSONFromBundle(filename: filename) else { return }
@@ -27,6 +32,9 @@ class Level {
                 }
             }
         }
+        
+        targetScore = dictionary["targetScore"] as! Int
+        maximumMoves = dictionary["moves"] as! Int
     }
     
     func cookieAt(column: Int, row: Int) -> Cookie? {
@@ -239,6 +247,8 @@ class Level {
         let horizontalChains = detectHorizontalMatches()
         let verticalChains = detectVerticalMatches()
         
+        calculateScores(for: horizontalChains)
+        calculateScores(for: verticalChains)
         removeCookies(chains: horizontalChains)
         removeCookies(chains: verticalChains)
         
@@ -310,4 +320,17 @@ class Level {
         }
         return columns
     }
+    
+    private func calculateScores(for chains: Set<Chain>) {
+        // 3-chain is 60 pts, 4-chain is 120, 5-chain is 180, and so on
+        for chain in chains {
+            chain.score = 60 * (chain.length - 2) * comboMultiplier
+            comboMultiplier += 1
+        }
+    }
+
+    func resetComboMultiplier() {
+        comboMultiplier = 1
+    }
+    
 }
