@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		011FB8961E4155F9008CBE05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011FB8951E4155F9008CBE05 /* AppDelegate.swift */; };
+		011FB89C1E4155F9008CBE05 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011FB89B1E4155F9008CBE05 /* GameScene.swift */; };
+		011FB89E1E4155F9008CBE05 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011FB89D1E4155F9008CBE05 /* GameViewController.swift */; };
+		011FB8A11E4155F9008CBE05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 011FB89F1E4155F9008CBE05 /* Main.storyboard */; };
+		011FB8A31E4155F9008CBE05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 011FB8A21E4155F9008CBE05 /* Assets.xcassets */; };
+		011FB8A61E4155F9008CBE05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 011FB8A41E4155F9008CBE05 /* LaunchScreen.storyboard */; };
+		011FB8B11E4155F9008CBE05 /* FrogCrushTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011FB8B01E4155F9008CBE05 /* FrogCrushTests.swift */; };
+		011FB8BC1E4155F9008CBE05 /* FrogCrushUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011FB8BB1E4155F9008CBE05 /* FrogCrushUITests.swift */; };
+		011FB8CA1E415A33008CBE05 /* Frogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011FB8C91E415A33008CBE05 /* Frogs.swift */; };
+		011FB8CC1E415CB3008CBE05 /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011FB8CB1E415CB3008CBE05 /* Array2D.swift */; };
+		011FB8CE1E415E11008CBE05 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011FB8CD1E415E11008CBE05 /* Level.swift */; };
+		011FB8D51E41613E008CBE05 /* Level_0.json in Resources */ = {isa = PBXBuildFile; fileRef = 011FB8D01E41613E008CBE05 /* Level_0.json */; };
+		011FB8D61E41613E008CBE05 /* Level_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 011FB8D11E41613E008CBE05 /* Level_1.json */; };
+		011FB8D71E41613E008CBE05 /* Level_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 011FB8D21E41613E008CBE05 /* Level_2.json */; };
+		011FB8D81E41613E008CBE05 /* Level_3.json in Resources */ = {isa = PBXBuildFile; fileRef = 011FB8D31E41613E008CBE05 /* Level_3.json */; };
+		011FB8D91E41613E008CBE05 /* Level_4.json in Resources */ = {isa = PBXBuildFile; fileRef = 011FB8D41E41613E008CBE05 /* Level_4.json */; };
+		011FB8DB1E41615F008CBE05 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011FB8DA1E41615F008CBE05 /* Tile.swift */; };
+		011FB8DD1E4161D5008CBE05 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011FB8DC1E4161D5008CBE05 /* Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		011FB8AD1E4155F9008CBE05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 011FB88A1E4155F9008CBE05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 011FB8911E4155F9008CBE05;
+			remoteInfo = FrogCrush;
+		};
+		011FB8B81E4155F9008CBE05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 011FB88A1E4155F9008CBE05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 011FB8911E4155F9008CBE05;
+			remoteInfo = FrogCrush;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		011FB8921E4155F9008CBE05 /* FrogCrush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrogCrush.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		011FB8951E4155F9008CBE05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		011FB89B1E4155F9008CBE05 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		011FB89D1E4155F9008CBE05 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		011FB8A01E4155F9008CBE05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		011FB8A21E4155F9008CBE05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		011FB8A51E4155F9008CBE05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		011FB8A71E4155F9008CBE05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		011FB8AC1E4155F9008CBE05 /* FrogCrushTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrogCrushTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		011FB8B01E4155F9008CBE05 /* FrogCrushTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrogCrushTests.swift; sourceTree = "<group>"; };
+		011FB8B21E4155F9008CBE05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		011FB8B71E4155F9008CBE05 /* FrogCrushUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrogCrushUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		011FB8BB1E4155F9008CBE05 /* FrogCrushUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrogCrushUITests.swift; sourceTree = "<group>"; };
+		011FB8BD1E4155F9008CBE05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		011FB8C91E415A33008CBE05 /* Frogs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Frogs.swift; sourceTree = "<group>"; };
+		011FB8CB1E415CB3008CBE05 /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
+		011FB8CD1E415E11008CBE05 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		011FB8D01E41613E008CBE05 /* Level_0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_0.json; sourceTree = "<group>"; };
+		011FB8D11E41613E008CBE05 /* Level_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_1.json; sourceTree = "<group>"; };
+		011FB8D21E41613E008CBE05 /* Level_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_2.json; sourceTree = "<group>"; };
+		011FB8D31E41613E008CBE05 /* Level_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_3.json; sourceTree = "<group>"; };
+		011FB8D41E41613E008CBE05 /* Level_4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_4.json; sourceTree = "<group>"; };
+		011FB8DA1E41615F008CBE05 /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		011FB8DC1E4161D5008CBE05 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		011FB88F1E4155F9008CBE05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		011FB8A91E4155F9008CBE05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		011FB8B41E4155F9008CBE05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		011FB8891E4155F9008CBE05 = {
+			isa = PBXGroup;
+			children = (
+				011FB8941E4155F9008CBE05 /* FrogCrush */,
+				011FB8AF1E4155F9008CBE05 /* FrogCrushTests */,
+				011FB8BA1E4155F9008CBE05 /* FrogCrushUITests */,
+				011FB8931E4155F9008CBE05 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		011FB8931E4155F9008CBE05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				011FB8921E4155F9008CBE05 /* FrogCrush.app */,
+				011FB8AC1E4155F9008CBE05 /* FrogCrushTests.xctest */,
+				011FB8B71E4155F9008CBE05 /* FrogCrushUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		011FB8941E4155F9008CBE05 /* FrogCrush */ = {
+			isa = PBXGroup;
+			children = (
+				011FB8951E4155F9008CBE05 /* AppDelegate.swift */,
+				011FB89B1E4155F9008CBE05 /* GameScene.swift */,
+				011FB89D1E4155F9008CBE05 /* GameViewController.swift */,
+				011FB89F1E4155F9008CBE05 /* Main.storyboard */,
+				011FB8A21E4155F9008CBE05 /* Assets.xcassets */,
+				011FB8DA1E41615F008CBE05 /* Tile.swift */,
+				011FB8C91E415A33008CBE05 /* Frogs.swift */,
+				011FB8CD1E415E11008CBE05 /* Level.swift */,
+				011FB8DC1E4161D5008CBE05 /* Extensions.swift */,
+				011FB8CB1E415CB3008CBE05 /* Array2D.swift */,
+				011FB8A41E4155F9008CBE05 /* LaunchScreen.storyboard */,
+				011FB8A71E4155F9008CBE05 /* Info.plist */,
+				011FB8CF1E41613E008CBE05 /* Levels */,
+			);
+			path = FrogCrush;
+			sourceTree = "<group>";
+		};
+		011FB8AF1E4155F9008CBE05 /* FrogCrushTests */ = {
+			isa = PBXGroup;
+			children = (
+				011FB8B01E4155F9008CBE05 /* FrogCrushTests.swift */,
+				011FB8B21E4155F9008CBE05 /* Info.plist */,
+			);
+			path = FrogCrushTests;
+			sourceTree = "<group>";
+		};
+		011FB8BA1E4155F9008CBE05 /* FrogCrushUITests */ = {
+			isa = PBXGroup;
+			children = (
+				011FB8BB1E4155F9008CBE05 /* FrogCrushUITests.swift */,
+				011FB8BD1E4155F9008CBE05 /* Info.plist */,
+			);
+			path = FrogCrushUITests;
+			sourceTree = "<group>";
+		};
+		011FB8CF1E41613E008CBE05 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				011FB8D01E41613E008CBE05 /* Level_0.json */,
+				011FB8D11E41613E008CBE05 /* Level_1.json */,
+				011FB8D21E41613E008CBE05 /* Level_2.json */,
+				011FB8D31E41613E008CBE05 /* Level_3.json */,
+				011FB8D41E41613E008CBE05 /* Level_4.json */,
+			);
+			path = Levels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		011FB8911E4155F9008CBE05 /* FrogCrush */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 011FB8C01E4155F9008CBE05 /* Build configuration list for PBXNativeTarget "FrogCrush" */;
+			buildPhases = (
+				011FB88E1E4155F9008CBE05 /* Sources */,
+				011FB88F1E4155F9008CBE05 /* Frameworks */,
+				011FB8901E4155F9008CBE05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FrogCrush;
+			productName = FrogCrush;
+			productReference = 011FB8921E4155F9008CBE05 /* FrogCrush.app */;
+			productType = "com.apple.product-type.application";
+		};
+		011FB8AB1E4155F9008CBE05 /* FrogCrushTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 011FB8C31E4155F9008CBE05 /* Build configuration list for PBXNativeTarget "FrogCrushTests" */;
+			buildPhases = (
+				011FB8A81E4155F9008CBE05 /* Sources */,
+				011FB8A91E4155F9008CBE05 /* Frameworks */,
+				011FB8AA1E4155F9008CBE05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				011FB8AE1E4155F9008CBE05 /* PBXTargetDependency */,
+			);
+			name = FrogCrushTests;
+			productName = FrogCrushTests;
+			productReference = 011FB8AC1E4155F9008CBE05 /* FrogCrushTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		011FB8B61E4155F9008CBE05 /* FrogCrushUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 011FB8C61E4155F9008CBE05 /* Build configuration list for PBXNativeTarget "FrogCrushUITests" */;
+			buildPhases = (
+				011FB8B31E4155F9008CBE05 /* Sources */,
+				011FB8B41E4155F9008CBE05 /* Frameworks */,
+				011FB8B51E4155F9008CBE05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				011FB8B91E4155F9008CBE05 /* PBXTargetDependency */,
+			);
+			name = FrogCrushUITests;
+			productName = FrogCrushUITests;
+			productReference = 011FB8B71E4155F9008CBE05 /* FrogCrushUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		011FB88A1E4155F9008CBE05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Treefrog Inc";
+				TargetAttributes = {
+					011FB8911E4155F9008CBE05 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = L2NAZNC754;
+						ProvisioningStyle = Automatic;
+					};
+					011FB8AB1E4155F9008CBE05 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = L2NAZNC754;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 011FB8911E4155F9008CBE05;
+					};
+					011FB8B61E4155F9008CBE05 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = L2NAZNC754;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 011FB8911E4155F9008CBE05;
+					};
+				};
+			};
+			buildConfigurationList = 011FB88D1E4155F9008CBE05 /* Build configuration list for PBXProject "FrogCrush" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 011FB8891E4155F9008CBE05;
+			productRefGroup = 011FB8931E4155F9008CBE05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				011FB8911E4155F9008CBE05 /* FrogCrush */,
+				011FB8AB1E4155F9008CBE05 /* FrogCrushTests */,
+				011FB8B61E4155F9008CBE05 /* FrogCrushUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		011FB8901E4155F9008CBE05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				011FB8A11E4155F9008CBE05 /* Main.storyboard in Resources */,
+				011FB8D71E41613E008CBE05 /* Level_2.json in Resources */,
+				011FB8D81E41613E008CBE05 /* Level_3.json in Resources */,
+				011FB8D61E41613E008CBE05 /* Level_1.json in Resources */,
+				011FB8A31E4155F9008CBE05 /* Assets.xcassets in Resources */,
+				011FB8A61E4155F9008CBE05 /* LaunchScreen.storyboard in Resources */,
+				011FB8D51E41613E008CBE05 /* Level_0.json in Resources */,
+				011FB8D91E41613E008CBE05 /* Level_4.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		011FB8AA1E4155F9008CBE05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		011FB8B51E4155F9008CBE05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		011FB88E1E4155F9008CBE05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				011FB8CE1E415E11008CBE05 /* Level.swift in Sources */,
+				011FB89C1E4155F9008CBE05 /* GameScene.swift in Sources */,
+				011FB89E1E4155F9008CBE05 /* GameViewController.swift in Sources */,
+				011FB8DD1E4161D5008CBE05 /* Extensions.swift in Sources */,
+				011FB8DB1E41615F008CBE05 /* Tile.swift in Sources */,
+				011FB8961E4155F9008CBE05 /* AppDelegate.swift in Sources */,
+				011FB8CA1E415A33008CBE05 /* Frogs.swift in Sources */,
+				011FB8CC1E415CB3008CBE05 /* Array2D.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		011FB8A81E4155F9008CBE05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				011FB8B11E4155F9008CBE05 /* FrogCrushTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		011FB8B31E4155F9008CBE05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				011FB8BC1E4155F9008CBE05 /* FrogCrushUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		011FB8AE1E4155F9008CBE05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 011FB8911E4155F9008CBE05 /* FrogCrush */;
+			targetProxy = 011FB8AD1E4155F9008CBE05 /* PBXContainerItemProxy */;
+		};
+		011FB8B91E4155F9008CBE05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 011FB8911E4155F9008CBE05 /* FrogCrush */;
+			targetProxy = 011FB8B81E4155F9008CBE05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		011FB89F1E4155F9008CBE05 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				011FB8A01E4155F9008CBE05 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		011FB8A41E4155F9008CBE05 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				011FB8A51E4155F9008CBE05 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		011FB8BE1E4155F9008CBE05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		011FB8BF1E4155F9008CBE05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		011FB8C11E4155F9008CBE05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L2NAZNC754;
+				INFOPLIST_FILE = FrogCrush/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Treefrog.FrogCrush;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		011FB8C21E4155F9008CBE05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L2NAZNC754;
+				INFOPLIST_FILE = FrogCrush/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Treefrog.FrogCrush;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		011FB8C41E4155F9008CBE05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = L2NAZNC754;
+				INFOPLIST_FILE = FrogCrushTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Treefrog.FrogCrushTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FrogCrush.app/FrogCrush";
+			};
+			name = Debug;
+		};
+		011FB8C51E4155F9008CBE05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = L2NAZNC754;
+				INFOPLIST_FILE = FrogCrushTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Treefrog.FrogCrushTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FrogCrush.app/FrogCrush";
+			};
+			name = Release;
+		};
+		011FB8C71E4155F9008CBE05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = L2NAZNC754;
+				INFOPLIST_FILE = FrogCrushUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Treefrog.FrogCrushUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FrogCrush;
+			};
+			name = Debug;
+		};
+		011FB8C81E4155F9008CBE05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = L2NAZNC754;
+				INFOPLIST_FILE = FrogCrushUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Treefrog.FrogCrushUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FrogCrush;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		011FB88D1E4155F9008CBE05 /* Build configuration list for PBXProject "FrogCrush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				011FB8BE1E4155F9008CBE05 /* Debug */,
+				011FB8BF1E4155F9008CBE05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		011FB8C01E4155F9008CBE05 /* Build configuration list for PBXNativeTarget "FrogCrush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				011FB8C11E4155F9008CBE05 /* Debug */,
+				011FB8C21E4155F9008CBE05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		011FB8C31E4155F9008CBE05 /* Build configuration list for PBXNativeTarget "FrogCrushTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				011FB8C41E4155F9008CBE05 /* Debug */,
+				011FB8C51E4155F9008CBE05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		011FB8C61E4155F9008CBE05 /* Build configuration list for PBXNativeTarget "FrogCrushUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				011FB8C71E4155F9008CBE05 /* Debug */,
+				011FB8C81E4155F9008CBE05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 011FB88A1E4155F9008CBE05 /* Project object */;
+}
