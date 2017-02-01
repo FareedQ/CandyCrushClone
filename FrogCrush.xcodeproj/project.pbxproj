@@ -32,6 +32,7 @@
 		011FB8EA1E416A51008CBE05 /* Ka-Ching.wav in Resources */ = {isa = PBXBuildFile; fileRef = 011FB8E41E416A51008CBE05 /* Ka-Ching.wav */; };
 		011FB8EB1E416A51008CBE05 /* Mining by Moonlight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 011FB8E51E416A51008CBE05 /* Mining by Moonlight.mp3 */; };
 		011FB8EC1E416A51008CBE05 /* Scrape.wav in Resources */ = {isa = PBXBuildFile; fileRef = 011FB8E61E416A51008CBE05 /* Scrape.wav */; };
+		011FB8EE1E416BAB008CBE05 /* Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011FB8ED1E416BAB008CBE05 /* Chain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		011FB8E41E416A51008CBE05 /* Ka-Ching.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Ka-Ching.wav"; sourceTree = "<group>"; };
 		011FB8E51E416A51008CBE05 /* Mining by Moonlight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mining by Moonlight.mp3"; sourceTree = "<group>"; };
 		011FB8E61E416A51008CBE05 /* Scrape.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Scrape.wav; sourceTree = "<group>"; };
+		011FB8ED1E416BAB008CBE05 /* Chain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 				011FB8C91E415A33008CBE05 /* Frogs.swift */,
 				011FB8CD1E415E11008CBE05 /* Level.swift */,
 				011FB8DC1E4161D5008CBE05 /* Extensions.swift */,
+				011FB8ED1E416BAB008CBE05 /* Chain.swift */,
 				011FB8CB1E415CB3008CBE05 /* Array2D.swift */,
 				011FB8A41E4155F9008CBE05 /* LaunchScreen.storyboard */,
 				011FB8A71E4155F9008CBE05 /* Info.plist */,
@@ -349,6 +352,7 @@
 				011FB89E1E4155F9008CBE05 /* GameViewController.swift in Sources */,
 				011FB8DD1E4161D5008CBE05 /* Extensions.swift in Sources */,
 				011FB8DB1E41615F008CBE05 /* Tile.swift in Sources */,
+				011FB8EE1E416BAB008CBE05 /* Chain.swift in Sources */,
 				011FB8961E4155F9008CBE05 /* AppDelegate.swift in Sources */,
 				011FB8CA1E415A33008CBE05 /* Frogs.swift in Sources */,
 				011FB8CC1E415CB3008CBE05 /* Array2D.swift in Sources */,
