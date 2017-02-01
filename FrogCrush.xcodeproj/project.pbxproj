@@ -25,6 +25,13 @@
 		011FB8D91E41613E008CBE05 /* Level_4.json in Resources */ = {isa = PBXBuildFile; fileRef = 011FB8D41E41613E008CBE05 /* Level_4.json */; };
 		011FB8DB1E41615F008CBE05 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011FB8DA1E41615F008CBE05 /* Tile.swift */; };
 		011FB8DD1E4161D5008CBE05 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011FB8DC1E4161D5008CBE05 /* Extensions.swift */; };
+		011FB8DF1E4164C2008CBE05 /* Swap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011FB8DE1E4164C2008CBE05 /* Swap.swift */; };
+		011FB8E71E416A51008CBE05 /* Chomp.wav in Resources */ = {isa = PBXBuildFile; fileRef = 011FB8E11E416A51008CBE05 /* Chomp.wav */; };
+		011FB8E81E416A51008CBE05 /* Drip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 011FB8E21E416A51008CBE05 /* Drip.wav */; };
+		011FB8E91E416A51008CBE05 /* Error.wav in Resources */ = {isa = PBXBuildFile; fileRef = 011FB8E31E416A51008CBE05 /* Error.wav */; };
+		011FB8EA1E416A51008CBE05 /* Ka-Ching.wav in Resources */ = {isa = PBXBuildFile; fileRef = 011FB8E41E416A51008CBE05 /* Ka-Ching.wav */; };
+		011FB8EB1E416A51008CBE05 /* Mining by Moonlight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 011FB8E51E416A51008CBE05 /* Mining by Moonlight.mp3 */; };
+		011FB8EC1E416A51008CBE05 /* Scrape.wav in Resources */ = {isa = PBXBuildFile; fileRef = 011FB8E61E416A51008CBE05 /* Scrape.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +76,13 @@
 		011FB8D41E41613E008CBE05 /* Level_4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_4.json; sourceTree = "<group>"; };
 		011FB8DA1E41615F008CBE05 /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
 		011FB8DC1E4161D5008CBE05 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		011FB8DE1E4164C2008CBE05 /* Swap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swap.swift; sourceTree = "<group>"; };
+		011FB8E11E416A51008CBE05 /* Chomp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Chomp.wav; sourceTree = "<group>"; };
+		011FB8E21E416A51008CBE05 /* Drip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Drip.wav; sourceTree = "<group>"; };
+		011FB8E31E416A51008CBE05 /* Error.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Error.wav; sourceTree = "<group>"; };
+		011FB8E41E416A51008CBE05 /* Ka-Ching.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Ka-Ching.wav"; sourceTree = "<group>"; };
+		011FB8E51E416A51008CBE05 /* Mining by Moonlight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mining by Moonlight.mp3"; sourceTree = "<group>"; };
+		011FB8E61E416A51008CBE05 /* Scrape.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Scrape.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +135,7 @@
 			children = (
 				011FB8951E4155F9008CBE05 /* AppDelegate.swift */,
 				011FB89B1E4155F9008CBE05 /* GameScene.swift */,
+				011FB8DE1E4164C2008CBE05 /* Swap.swift */,
 				011FB89D1E4155F9008CBE05 /* GameViewController.swift */,
 				011FB89F1E4155F9008CBE05 /* Main.storyboard */,
 				011FB8A21E4155F9008CBE05 /* Assets.xcassets */,
@@ -131,6 +146,7 @@
 				011FB8CB1E415CB3008CBE05 /* Array2D.swift */,
 				011FB8A41E4155F9008CBE05 /* LaunchScreen.storyboard */,
 				011FB8A71E4155F9008CBE05 /* Info.plist */,
+				011FB8E01E416A51008CBE05 /* Sounds */,
 				011FB8CF1E41613E008CBE05 /* Levels */,
 			);
 			path = FrogCrush;
@@ -164,6 +180,20 @@
 				011FB8D41E41613E008CBE05 /* Level_4.json */,
 			);
 			path = Levels;
+			sourceTree = "<group>";
+		};
+		011FB8E01E416A51008CBE05 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				011FB8E11E416A51008CBE05 /* Chomp.wav */,
+				011FB8E21E416A51008CBE05 /* Drip.wav */,
+				011FB8E31E416A51008CBE05 /* Error.wav */,
+				011FB8E41E416A51008CBE05 /* Ka-Ching.wav */,
+				011FB8E51E416A51008CBE05 /* Mining by Moonlight.mp3 */,
+				011FB8E61E416A51008CBE05 /* Scrape.wav */,
+			);
+			name = Sounds;
+			path = ../Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,12 +307,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				011FB8A11E4155F9008CBE05 /* Main.storyboard in Resources */,
+				011FB8E81E416A51008CBE05 /* Drip.wav in Resources */,
+				011FB8EA1E416A51008CBE05 /* Ka-Ching.wav in Resources */,
 				011FB8D71E41613E008CBE05 /* Level_2.json in Resources */,
 				011FB8D81E41613E008CBE05 /* Level_3.json in Resources */,
+				011FB8EB1E416A51008CBE05 /* Mining by Moonlight.mp3 in Resources */,
+				011FB8EC1E416A51008CBE05 /* Scrape.wav in Resources */,
+				011FB8E91E416A51008CBE05 /* Error.wav in Resources */,
 				011FB8D61E41613E008CBE05 /* Level_1.json in Resources */,
 				011FB8A31E4155F9008CBE05 /* Assets.xcassets in Resources */,
 				011FB8A61E4155F9008CBE05 /* LaunchScreen.storyboard in Resources */,
 				011FB8D51E41613E008CBE05 /* Level_0.json in Resources */,
+				011FB8E71E416A51008CBE05 /* Chomp.wav in Resources */,
 				011FB8D91E41613E008CBE05 /* Level_4.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,6 +352,7 @@
 				011FB8961E4155F9008CBE05 /* AppDelegate.swift in Sources */,
 				011FB8CA1E415A33008CBE05 /* Frogs.swift in Sources */,
 				011FB8CC1E415CB3008CBE05 /* Array2D.swift in Sources */,
+				011FB8DF1E4164C2008CBE05 /* Swap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
